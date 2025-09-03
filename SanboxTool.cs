@@ -14,8 +14,8 @@ public sealed class SandboxTool
         return "10kg";
     }
 
-    [McpServerTool, Description("Generates a Report using a Word Template")]
-    public async Task<string> generateReport(string address,
+    [McpServerTool, Description("Populates the Social Care Word Template with provided values.")]
+    public async Task<string> populateSocialCareWordTemplate(string address,
         string backgroundMentalHealthWellbeing,
         string physicalHealth,
         string mentalAndEmotionalWellbeing,
